@@ -1,0 +1,42 @@
+/******************************************/
+/******************FOOTER SECTION******************/
+/******************************************/
+
+.container_footer--general{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.section_footer--content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_logos--redessociales{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.logo_redsocial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_copyright{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,141 @@
+/******************************************/
+/******************HEADER******************/
+/******************************************/
+
+header{
+    width: 100%;
+    height: 94px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 5;
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+    margin-right: 13px;
+}
+
+.nav_item{
+    display: flex;
+    padding: 3px 12px;
+    border-radius: 6px;
+    flex-direction: row;
+}
+
+.nav_item:hover{
+    color: #FFF;
+    background: rgb(2,0,36);
+    background: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(220,249,255,1) 0%, rgba(35,169,233,1) 100%);
+    transition: .5s;
+}
+
+/*Inicia Menu Hamburguesa*/
+
+.nav svg{
+    fill: blue;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+@media(max-width: 900px){
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        position: fixed;
+        top:0;
+        right: -100%;
+        z-index: 10;
+        width: 500px;
+
+        background-color: rgb(2, 30, 48);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 1s;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        padding:  20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+
+    .sidebar-active:checked  ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .img_logo--container{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: flex-start;
+    }
+
+    .nav_menu{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        margin-left: 14px;
+        text-align: left;
+    }
+
+    .nav_item{
+        margin: 25px 0;
+        color: #FFF;
+    }
+
+    .nav_item a{
+        color: #FFF;
+    }
+
+    .nav_item a:hover {
+        color: black;
+    }
+}
+
+/*Termina Menu Hamburguesa*/
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255); 
+}
+
+.empty_space{
+    background-color: #c9e7f4; 
+}

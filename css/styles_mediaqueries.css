@@ -1,0 +1,455 @@
+/******************************************/
+/******************MEDIA QUERIES******************/
+/******************************************/
+
+@media only screen and (max-width: 360px) {
+
+    /*NAV MENU*/
+
+    .links-container {
+        right: -150%;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        right: -260px; /*On 130px fits perfect all the canvas, we need the half*/
+    }
+
+    /*HERO*/
+
+    .banner1, .banner2, .banner3, .banner4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-box {
+        width: 90%;
+        right: 1rem;
+        left: 10px;
+        top:0px;
+    }
+
+    .text-box h1{
+        margin-bottom: 8px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+        line-height: 19px;
+        margin-top: 20px;
+    }
+
+    /*QUIENES*/
+
+    .content_photo--details {
+        width: 240px;
+    }
+
+    /*PRODUCTOS*/
+    .container_productos--general{
+        margin-top: 58rem; 
+
+    }
+
+    /*FOOTER*/
+
+    .section_footer--content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content_logos--redessociales {
+        justify-content: center;
+    }
+}
+
+/*Extra small devices*/
+@media only screen and (max-width: 600px){
+
+    .empty_space{
+        height: 120vh;
+    }
+
+    /*HERO HOME*/
+    .banner1, .banner2, .banner3, .banner4{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .text-box {
+        width: 80%;
+        right: 1rem;
+        left: 60px;
+        top:350px;
+    }
+
+    .text-box h1{
+        margin-bottom: 10px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+        line-height: 19px;
+        margin-top: 30px;
+    }
+
+    .text-box span {
+        width: 90%;
+    }
+
+    /*QUIENES SOMOS*/
+    .container_quienes--general{
+        width: 90%;
+    }
+
+    .section_quienes--info{
+        flex-direction: column;
+    }
+
+    .section_quienes--left{
+        width: 100%;
+    }
+    
+    .section_quienes--right{
+        width: 100%;
+    }
+
+
+    /*PRODUCTOS*/
+    .section_products--info{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .content_product{
+        width: 100%;
+    }
+
+
+    /*TESTIMONIOS*/
+    .content_testimonios{
+        width: 100%;
+        border: 3px solid green;
+    }
+
+    .box_testimonio{
+        width: 80%;
+    }
+
+
+    /*CERTIFICACIONES*/
+    .content_certificaciones{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .logo_certificado{
+        width: 90%;
+    }
+
+
+    /*CONTACTO*/
+    .content_contacto{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container_contacto{
+        width: 100%;
+    }
+
+    .content_form--contacto{
+        width: 100%;
+    }
+
+
+    /*FOOTER*/
+
+    .content_logos--redessociales{
+        width: 30%;
+    }
+
+    .text_copyright{
+        width: 90%;
+    }
+}
+
+
+    /*Small devices (portrait tablets and large phones, 600px and up)*/    
+    @media only screen and (min-width: 601px) {
+
+        .empty_space{
+            height: 120vh;
+        }
+    
+        /*QUIENES SOMOS*/
+        .container_quienes--general{
+            width: 90%;
+        }
+    
+        .section_quienes--info{
+            flex-direction: column;
+        }
+    
+        .section_quienes--left{
+            width: 100%;
+        }
+        
+        .section_quienes--right{
+            width: 100%;
+        }
+
+
+        /*PRODUCTOS*/
+        .section_products--info{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .content_product{
+            width: 47%;
+        }
+
+
+        /*TESTIMONIOS*/
+        .content_testimonios{
+            width: 100%;
+        }
+
+        .box_testimonio{
+            width: 80%;
+        }
+
+
+        /*CERTIFICACIONES*/
+        .content_certificaciones{
+            width: 90%;
+            flex-direction: row;
+        }
+
+        .logo_certificado{
+            width: 45%;
+        }
+
+
+        /*CONTACTO*/
+        .content_contacto{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .container_contacto{
+            width: 100%;
+        }
+
+        .content_form--contacto{
+            width: 100%;
+        }
+
+
+        /*FOOTER*/
+
+        .content_logos--redessociales{
+            width: 30%;
+        }
+
+        .text_copyright{
+            width: 90%;
+        }
+
+    }
+
+
+    /*Medium devices (landscape tablets, 768px and up)*/    
+    @media only screen and (min-width: 768px) {
+
+        /*HERO*/
+        .text-box {
+            width: 80%;
+            right: 1rem;
+            left: 60px;
+            top:355px;
+        }
+
+        .text-box h1{
+            margin-bottom: 10px;
+        }
+    
+        .text-box p {
+            font-size: 20px;
+            line-height: 19px;
+            margin-top: 40px;
+        }
+
+        .empty_space{
+            height: 125vh;
+        }
+
+        .content_testimonios{
+            width: 90%;
+        }
+
+        .box_testimonio{
+            width: 45%;
+        }
+
+    }
+
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+
+        /*HERO*/
+
+        .text-box {
+            width: 80%;
+            right: 1rem;
+            left: 60px;
+            top:455px;
+        }
+
+        .text-box h1{
+            margin-bottom: 10px;
+        }
+    
+        .text-box p {
+            font-size: 20px;
+            line-height: 19px;
+            margin-top: 40px;
+        }
+
+
+        .empty_space{
+            height: 135vh;
+        }
+
+        .content_product{
+            width: 30%;
+        }
+
+        .content_certificaciones{
+            width: 100%;
+        }
+
+        .logo_certificado{
+            width: 29%;
+        }
+
+        /*CONTACTO*/
+
+        .section_contacto_container{
+            width: 98%;
+        }
+
+        .content_contacto{
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .container_contacto{
+            width: 50%;
+        }
+
+        .content_form--contacto{
+            width: 50%;
+        }
+
+    }
+
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+
+        /*HERO*/
+
+        .text-box {
+            width: 80%;
+            right: 1rem;
+            left: 110px;
+            top:370px;
+        }
+
+        .text-box h1{
+            margin-bottom: 10px;
+        }
+    
+        .text-box p {
+            font-size: 20px;
+            line-height: 22px;
+            margin-top: 40px;
+        }
+
+
+        .empty_space{
+            height: 90vh;
+        }
+
+        .container_quienes--general{
+            width: 80%;
+        }
+
+        .section_quienes--content{
+            width: 90%;
+        }
+
+        .section_quienes--info{
+            flex-direction: row;
+        }
+
+        .section_quienes--left{
+            width: 50%;
+        }
+        
+        .section_quienes--right{
+            width: 50%;
+        }
+
+        .box_testimonio{
+            width: 30%;
+        }
+
+        .content_contacto{
+            width: 85%;
+        }
+
+        .content_logos--redessociales{
+            width: 20%;
+        }
+    }
+
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1440px){
+
+        /*HERO*/
+
+        .text-box {
+            width: 80%;
+            right: 1rem;
+            left: 140px;
+            top:370px;
+        }
+
+        .text-box h1{
+            margin-bottom: 10px;
+        }
+    
+        .text-box p {
+            font-size: 20px;
+            line-height: 22px;
+            margin-top: 40px;
+        }
+
+
+        .empty_space{
+            height: 60vh;
+        }
+
+        .content_contacto{
+            width: 70%;
+        }
+
+    }

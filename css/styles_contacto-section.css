@@ -1,0 +1,112 @@
+/******************************************/
+/******************CONTACTO SECTION******************/
+/******************************************/
+
+.container_contacto--general{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/*Este es el contenedor con el fondo azul*/
+.section_contacto--content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9e7f4;
+}
+
+.section_contacto_container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_contacto--titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.content_contacto{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Este es el contenedor de la imagen*/
+
+
+.container_contacto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Este es el contenedor azul del formulario*/
+.content_form--contacto{
+    width: 50%;
+    border-radius: 8px;
+    padding: 50px  60px;
+    background: rgb(2,0,36);
+    background: linear-gradient(27deg, rgba(2,0,36,1) 0%, rgba(66,200,238,1) 0%, rgba(174,227,250,1) 100%);
+    margin-bottom: 40px;
+}
+
+.form_contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form_contacto input{
+    border-radius: 6px;
+    box-shadow: 0px 1px 7px -3px rgba(26,113,163,0.58);
+-webkit-box-shadow: 0px 1px 7px -3px rgba(26,113,163,0.58);
+-moz-box-shadow: 0px 1px 7px -3px rgba(26,113,163,0.58);
+}
+
+.form_contacto textarea{
+    border-radius: 6px;
+    box-shadow: 0px 1px 7px -3px rgba(26,113,163,0.58);
+-webkit-box-shadow: 0px 1px 7px -3px rgba(26,113,163,0.58);
+-moz-box-shadow: 0px 1px 7px -3px rgba(26,113,163,0.58);
+}
+
+.content_input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 8px 1px;
+}
+
+.form_contacto textarea{
+    resize: none;
+}
+
+.form_contacto .button_form{
+    width: 100%;
+    margin: 8px 8px;
+    padding: 3px 3px;
+
+}
+
+.btn_color_azul{
+    background: rgb(2,0,36);
+    background: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(227,236,255,1) 0%, rgba(126,157,247,1) 100%);
+}
+
+.btn_color_rojo{
+    background: rgb(2,0,36);
+    background: linear-gradient(175deg, rgba(2,0,36,1) 0%, rgba(254,213,238,1) 0%, rgba(249,57,151,1) 100%);
+}
